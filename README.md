@@ -68,7 +68,7 @@ https://github.com/arduino-libraries/Keyboard
 
 ## Assembly
 * Required materials:
-  * 1 PCB (Gerber files attached)
+  * 1 PCB **make sure the PCB thickness is 1.6 mm** (Gerber files attached)
   * 16 3-pin full size mechanical switches of any kind (5-pin update coming soon in revision 2)
   * Electronic components listed in the BOM
   * 3D printed case (.stl files attached; feel free to design your own (.step file of the PCB can be generated in KiCad))
