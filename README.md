@@ -85,3 +85,5 @@ https://github.com/arduino-libraries/Keyboard
   8. After soldering the switches, feed the LEDs throughand solder them. It's a good idea to just feed them and bend the leads for testing. Do it and plug in the board. If you see all LEDs shining (with some wiggling due to the lack of solder), the board works.
   9. Trim the leads, clean the board one last time, and assemble the case.
   10. Your board is ready, it's a good time to double check everything.
+
+### Please note that this project is not a polished product. It's meant to be a fun project to tinker and experiment with. Working on it took me a total of one week worth of deisgn, coding, assembly, and testing. Please take imperfections with a grain of salt, as this is only a project delivered by a nerd to his fellow nerds. Happy tinkering!
