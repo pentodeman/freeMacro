@@ -1,0 +1,351 @@
+#####################################################################################################
+#                                                                                                   #
+#   Before modifying the config, back it up or keep the Git repo in an accessible place as backup   #
+#                                                                                                   #
+#####################################################################################################
+
+# Any comment in this file must start at the beginning of a commented line and be designated with the pound symbol ('#')
+
+# File format:
+
+# [BANKX]                   Bank X identifier; replace X with a hex value 0x0 through 0xC 
+# F_<Token for key 0>       Key 0
+# E_<Token for key 1>       Key 1
+# D_<Token for key 2>       Key 2
+# C_<Token for key 3>       Key 3
+# B_<Token for key 4>       Key 4
+# A_<Token for key 5>       Key 5
+# 9_<Token for key 6>       Key 6
+# 8_<Token for key 7>       Key 7
+# 7_<Token for key 8>       Key 8
+# 6_<Token for key 9>       Key 9
+# 5_<Token for key A>       Key A
+# 4_<Token for key B>       Key B
+# 3_<Token for key C>       Key C
+# 2_<Token for key D>       Key D
+# 1_<Token for key E>       Key E
+# 0_<Token for key F>       Key F
+
+# Possible key tokens (actions to be performed):
+#   - [X]_Unicode=<hex value>
+#   - [X]_String=<string>
+#   - [X]_Key=<char>
+#   - [X]_Combo=<key1>+<key2>+...+<keyN>
+#   [X] represents the key to be assigned to; follow the default config
+
+# Possible special keys (modifiers, numpad, function keys, etc...):
+# LSHIFT                Left Shift
+# LCTRL                 Left Control
+# LALT                  Left Alt
+# LGUI                  Left GUI
+# RSHIFT                Right Shift
+# RCTRL                 Right Control
+# RALT                  Right Alt
+# RGUI                  Right GUI
+# UPARROW               Up Arrow
+# DOWNARROW             Down Arrow
+# LARROW                Left Arrow
+# RARROW                Right Arrow
+# BACKSPACE             Backspace
+# TAB                   Tab
+# ENTER                 Enter
+# MENU                  Menu
+# ESC                   Escape
+# INSERT                Insert
+# DEL                   Delete
+# PGUP                  Page Up
+# PGDOWN                Page Down
+# HOME                  Home
+# END                   End
+# CAPS                  Caps Lock
+# PRINTSCR              Print Screen
+# SCLOCK                Scroll Lock
+# PAUSE                 Pause
+# NUMLOCK               Num Lock
+# NUMSLASH              Numpad Slash
+# NUMASTERISK           Numpad Asterisk
+# NUMMINUS              Numpad -
+# NUMPLUS               Numpad Plus
+# NUMENTER              Numpad Enter
+# NUM0                  Numpad 0
+# NUM1                  Numpad 1
+# NUM2                  Numpad 2
+# NUM3                  Numpad 3
+# NUM4                  Numpad 4
+# NUM5                  Numpad 5
+# NUM6                  Numpad 6
+# NUM7                  Numpad 7
+# NUM8                  Numpad 8
+# NUM9                  Numpad 9
+# NUMDOT                Numpad Dot
+# KF1                   F1
+# KF2                   F2
+# KF3                   F3
+# KF4                   F4
+# KF5                   F5
+# KF6                   F6
+# KF7                   F7    
+# KF8                   F8
+# KF9                   F9
+# KF10                  F10
+# KF11                  F11
+# KF12                  F12
+# KF13                  F13
+# KF14                  F14
+# KF15                  F15
+# KF16                  F16
+# KF17                  F17
+# KF18                  F18
+# KF19                  F19   
+# KF20                  F20
+# KF21                  F21
+# KF22                  F22
+# KF23                  F23
+# KF24                  F24
+
+# [OPTIONAL] Variable lines:
+# $OS_INIT              Initial operating system selection: LINUX, WINDOWS, MACOS
+# $BANK_INIT            Initial bank selections: 0 -> C
+# $DEBOUNCE_TIME        Key debounce time: integer [default: 30]
+# $HOLD_TIME            Key hold time: integer [default: 500]
+# $BACKLIGHT_INTENSITY  Idle backlight intensity: integer 0-255 [default: 70]
+
+$OS_INIT=LINUX
+$BANK_INIT=9
+$DEBOUNCE_TIME=30
+$HOLD_TIME=500
+$BACKLIGHT_INTENSITY=70
+
+[BANK0]
+F_Combo=LCTRL+LSHIFT+RCTRL+p
+E_Combo=LCTRL+LSHIFT+RCTRL+o
+D_Combo=LCTRL+LSHIFT+RCTRL+n
+C_Combo=LCTRL+LSHIFT+RCTRL+m
+B_Combo=LCTRL+LSHIFT+RCTRL+l
+A_Combo=LCTRL+LSHIFT+RCTRL+k
+9_Combo=LCTRL+LSHIFT+RCTRL+j
+8_Combo=LCTRL+LSHIFT+RCTRL+i
+7_Combo=LCTRL+LSHIFT+RCTRL+h
+6_Combo=LCTRL+LSHIFT+RCTRL+g
+5_Combo=LCTRL+LSHIFT+RCTRL+f
+4_Combo=LCTRL+LSHIFT+RCTRL+e
+3_Combo=LCTRL+LSHIFT+RCTRL+d
+2_Combo=LCTRL+LSHIFT+RCTRL+c
+1_Combo=LCTRL+LSHIFT+RCTRL+b
+0_Combo=LCTRL+LSHIFT+RCTRL+a
+
+[BANK1]
+F_Combo=LCTRL+LSHIFT+RALT+p
+E_Combo=LCTRL+LSHIFT+RALT+o
+D_Combo=LCTRL+LSHIFT+RALT+n
+C_Combo=LCTRL+LSHIFT+RALT+m
+B_Combo=LCTRL+LSHIFT+RALT+l
+A_Combo=LCTRL+LSHIFT+RALT+k
+9_Combo=LCTRL+LSHIFT+RALT+j
+8_Combo=LCTRL+LSHIFT+RALT+i
+7_Combo=LCTRL+LSHIFT+RALT+h
+6_Combo=LCTRL+LSHIFT+RALT+g
+5_Combo=LCTRL+LSHIFT+RALT+f
+4_Combo=LCTRL+LSHIFT+RALT+e
+3_Combo=LCTRL+LSHIFT+RALT+d
+2_Combo=LCTRL+LSHIFT+RALT+c
+1_Combo=LCTRL+LSHIFT+RALT+b
+0_Combo=LCTRL+LSHIFT+RALT+a
+
+[BANK2]
+F_Combo=LCTRL+LSHIFT+RCTRL+RALT+p
+E_Combo=LCTRL+LSHIFT+RCTRL+RALT+o
+D_Combo=LCTRL+LSHIFT+RCTRL+RALT+n
+C_Combo=LCTRL+LSHIFT+RCTRL+RALT+m
+B_Combo=LCTRL+LSHIFT+RCTRL+RALT+l
+A_Combo=LCTRL+LSHIFT+RCTRL+RALT+k
+9_Combo=LCTRL+LSHIFT+RCTRL+RALT+j
+8_Combo=LCTRL+LSHIFT+RCTRL+RALT+i
+7_Combo=LCTRL+LSHIFT+RCTRL+RALT+h
+6_Combo=LCTRL+LSHIFT+RCTRL+RALT+g
+5_Combo=LCTRL+LSHIFT+RCTRL+RALT+f
+4_Combo=LCTRL+LSHIFT+RCTRL+RALT+e
+3_Combo=LCTRL+LSHIFT+RCTRL+RALT+d
+2_Combo=LCTRL+LSHIFT+RCTRL+RALT+c
+1_Combo=LCTRL+LSHIFT+RCTRL+RALT+b
+0_Combo=LCTRL+LSHIFT+RCTRL+RALT+a
+
+[BANK3]
+F_Combo=LCTRL+LSHIFT+RCTRL+LALT+p
+E_Combo=LCTRL+LSHIFT+RCTRL+LALT+o
+D_Combo=LCTRL+LSHIFT+RCTRL+LALT+n
+C_Combo=LCTRL+LSHIFT+RCTRL+LALT+m
+B_Combo=LCTRL+LSHIFT+RCTRL+LALT+l
+A_Combo=LCTRL+LSHIFT+RCTRL+LALT+k
+9_Combo=LCTRL+LSHIFT+RCTRL+LALT+j
+8_Combo=LCTRL+LSHIFT+RCTRL+LALT+i
+7_Combo=LCTRL+LSHIFT+RCTRL+LALT+h
+6_Combo=LCTRL+LSHIFT+RCTRL+LALT+g
+5_Combo=LCTRL+LSHIFT+RCTRL+LALT+f
+4_Combo=LCTRL+LSHIFT+RCTRL+LALT+e
+3_Combo=LCTRL+LSHIFT+RCTRL+LALT+d
+2_Combo=LCTRL+LSHIFT+RCTRL+LALT+c
+1_Combo=LCTRL+LSHIFT+RCTRL+LALT+b
+0_Combo=LCTRL+LSHIFT+RCTRL+LALT+a
+
+[BANK4]
+F_String=0x00
+E_String=0x01
+D_String=0x02
+C_String=0x03
+B_String=0x04
+A_String=0x05
+9_String=0x06
+8_String=0x07
+7_String=0x08
+6_String=0x09
+5_String=0x0A
+4_String=0x0B
+3_String=0x0C
+2_String=0x0D
+1_String=0x0E
+0_String=0x0F
+
+[BANK5]
+F_String=0x0000
+E_String=0x0001
+D_String=0x0002
+C_String=0x0003
+B_String=0x0004
+A_String=0x0005
+9_String=0x0006
+8_String=0x0007
+7_String=0x0008
+6_String=0x0009
+5_String=0x000A
+4_String=0x000B
+3_String=0x000C
+2_String=0x000D
+1_String=0x000E
+0_String=0x000F
+
+[BANK6]
+F_Key=NUM0
+E_Key=NUM1
+D_Key=NUM2
+C_Key=NUM3
+B_Key=NUM4
+A_Key=NUM5
+9_Key=NUM6
+8_Key=NUM7
+7_Key=NUM8
+6_Key=NUM9
+5_Key=NUMPLUS
+4_Key=NUMMINUS
+3_Key=NUMASTERISK
+2_Key=NUMSLASH
+1_Key=NUMDOT
+0_Key=NUMENTER
+
+[BANK7]
+F_Unicode=220f
+E_Unicode=2210
+D_Unicode=2211
+C_Unicode=001b
+B_Unicode=2213
+A_Unicode=2219
+9_Unicode=221a
+8_Unicode=221b
+7_Unicode=221d
+6_Unicode=221e
+5_Unicode=2220
+4_Unicode=2222
+3_Unicode=2225
+2_Unicode=222b
+1_Unicode=222c
+0_Unicode=222d
+
+[BANK8]
+F_Unicode=249c
+E_Unicode=249d
+D_Unicode=249e
+C_Unicode=249f
+B_Unicode=24a0
+A_Unicode=24a1
+9_Unicode=24a2
+8_Unicode=24a3
+7_Unicode=24a4
+6_Unicode=24a5
+5_Unicode=24a6
+4_Unicode=24a7
+3_Unicode=24a8
+2_Unicode=24a9
+1_Unicode=24aa
+0_Unicode=24ab
+
+[BANK9]
+F_Unicode=03b1
+E_Unicode=03b2
+D_Unicode=03b3
+C_Unicode=0394
+B_Unicode=03b7
+A_Unicode=03b8
+9_Unicode=03bb
+8_Unicode=03bc
+7_Unicode=03bd
+6_Unicode=03c0
+5_Unicode=03c1
+4_Unicode=03c4
+3_Unicode=03c6
+2_Unicode=03c9
+1_Unicode=03a9
+0_Unicode=03a3
+
+[BANKA]
+F_Unicode=2190
+E_Unicode=2192
+D_Unicode=21d2
+C_Unicode=2208
+B_Unicode=2209
+A_Unicode=220b
+9_Unicode=220c
+8_Unicode=221a
+7_Unicode=2203
+6_Unicode=2200
+5_Unicode=2234
+4_Unicode=2206
+3_Unicode=2220
+2_Unicode=2205
+1_Unicode=2261
+0_Unicode=2248
+
+[BANKB]
+F_String=Live long and prosper
+E_String=String 1
+D_String=String 2
+C_String=String 3
+B_String=String 4
+A_String=String 5
+9_String=String 6
+8_String=String 7
+7_String=String 8
+6_String=String 9
+5_String=String A
+4_String=String B
+3_String=String C
+2_String=String D
+1_String=String E
+0_String=String F
+
+[BANKC]
+F_String=Live long and prosper
+E_String=String 01
+D_String=String 02
+C_String=String 03
+B_String=String 04
+A_String=String 05
+9_String=String 06
+8_String=String 07
+7_String=String 08
+6_String=String 09
+5_String=String 0A
+4_String=String 0B
+3_String=String 0C
+2_String=String 0D
+1_String=String 0E
+0_String=String 0F
