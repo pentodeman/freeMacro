@@ -2,7 +2,7 @@
 A simple macro keypad that invokes key combinations, prints strings of text, and types special characters.
 
 Special thanks to Arduino LLC for providing the Keyboard library that was used to create this project.
-The link to the library is available under:
+The library is available under:
 https://github.com/arduino-libraries/Keyboard
 
 ## Features
